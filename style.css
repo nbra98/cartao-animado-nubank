@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #282C2F;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartao {
+    background: #820AD1;
+    border-radius: 10px;
+    height: 25em;
+    width: 16em;
+    margin: 8% 0;
+    padding: 1em;
+    box-shadow: 8px 8px 8px #000000;
+    position: inherit;
+    opacity: 0;
+    animation: animacao 2s forwards;
+}
+/* Efeito de opacidade no início: */
+@keyframes animacao {
+    to {
+        opacity: 1;
+    }
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.cabecalho {
+    height: 70%;
+}
+.caixaImagens {
+    display: flex;
+    align-items: flex-start;
+}
+/* caixaImagens: */
+img[alt=Logo-da-MasterCard]{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: 30%;
+}
+/* caixaImagens: */
+.chip {
+    margin-top: 0.7rem;
+    transform: rotate(90deg);
+    width: 40%;
+}
+.rodape p { 
+    margin-top: -10%;
+    margin-left: 1.1rem; 
+    height: 40%;
+} 
+.rodape img {
+    margin-top: -15%;
+    margin-left: -0.8%;
+    width: 45%;
+}
